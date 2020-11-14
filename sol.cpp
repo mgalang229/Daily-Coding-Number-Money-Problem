@@ -18,6 +18,11 @@ int main() {
 	while(t--) {
 		string s;
 		cin >> s;
+		int tmp=stoi(s);
+		if(tmp<0||tmp>1e6) {
+			cout << "--.--\n";
+			return 0;
+		}
 		string ns="";
 		int cnt=0;
 		for(int i=(int)s.size()-1; i>=0; --i) {
